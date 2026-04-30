@@ -24,6 +24,7 @@ const connectDB = async () => {
   }
 };
 
+app.use ("/api", router)
 const startServer = async () => {
   try {
     await connectDB();
